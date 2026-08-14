@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshjeet Anand | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coral: "#ff6b4a",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .cursor {
+        display: inline-block;
+        width: 8px;
+        height: 22px;
+        background: #ff6b4a;
+        margin-left: 5px;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        50%,
+        100% {
+          opacity: 1;
+        }
+        25%,
+        75% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#0a0a0a] text-gray-200 font-mono relative overflow-x-hidden">
+    <!-- Grid Background -->
+    <div
+      class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"
+    ></div>
+
+    <!-- Coral Glow -->
+    <div
+      class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-coral opacity-10 blur-[150px] -z-10"
+    ></div>
+
+    <!-- NAVBAR -->
+    <nav
+      class="flex justify-between items-center px-8 py-6 border-b border-gray-800"
+    >
+      <h1 class="text-coral text-xl font-bold">HJ_ANAND</h1>
+      <div class="space-x-6 hidden md:block">
+        <a href="#projects" class="hover:text-coral transition duration-300"
+          >Projects</a
+        >
+        <a href="#skills" class="hover:text-coral transition duration-300"
+          >Skills</a
+        >
+        <a href="#experience" class="hover:text-coral transition duration-300"
+          >Experience</a
+        >
+        <a href="#contact" class="hover:text-coral transition duration-300"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO TERMINAL -->
+    <section
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6"
+    >
+      <div
+        class="bg-black border border-gray-800 rounded-lg p-8 w-full max-w-3xl text-left shadow-lg"
+      >
+        <!-- Terminal Controls -->
+        <div class="flex space-x-2 mb-6">
+          <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+          <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+        </div>
+
+        <p class="text-coral">$ initializing portfolio...</p>
+        <p class="text-coral">$ loading developer profile...</p>
+
+        <h1 class="text-4xl md:text-6xl font-bold text-white mt-6">
+          <span id="typing-name"></span><span class="cursor"></span>
+        </h1>
+
+        <p class="mt-4 text-gray-400 text-lg">
+          Computer Science Engineering Student | Full Stack Developer
+        </p>
+        <p class="text-gray-400 text-lg">
+          Web Development | DSA | AI & Privacy-Focused Applications
+        </p>
+
+        <div class="mt-8 flex gap-4 flex-wrap">
+          <a
+            href="#contact"
+            class="px-6 py-3 bg-coral text-black font-semibold rounded hover:scale-105 transition"
+          >
+            Open to Internships 2026
+          </a>
+          <a
+            href="resume.pdf"
+            class="border border-coral px-6 py-3 rounded hover:bg-coral hover:text-black transition duration-300"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section
+      class="py-20 px-8 max-w-5xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
+      <h2 class="text-3xl text-coral mb-6">About Me</h2>
+      <p class="text-gray-400 leading-relaxed">
+        I am a Computer Science & Engineering student at KCC Institute of
+        Technology and Management, focused on building full-stack web
+        applications, solving Data Structures & Algorithms problems, and
+        exploring AI-powered software. I work with React.js, Node.js,
+        Express.js, MongoDB, Python, C++, and modern development tools. I have
+        solved 500+ problems on LeetCode and enjoy building practical
+        applications that combine strong problem-solving with real-world
+        software development.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section
+      id="projects"
+      class="py-20 px-8 bg-[#0d0d0d] reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
+      <h2 class="text-3xl text-coral mb-12 text-center">Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div
+          class="bg-black p-8 rounded-lg border border-gray-800 hover:border-coral transition transform hover:-translate-y-2 duration-300"
+        >
+          <h3 class="text-2xl text-white mb-2">
+            Offline AI Enterprise Assistant
+          </h3>
+          <p class="text-gray-400 mb-2">
+            Python | Flask | Ollama | Electron — AI &amp; Privacy-Focused
+            Application
+          </p>
+          <p class="text-gray-400 mb-4">
+            Built a 100% offline privacy-first AI assistant, ensuring zero cloud
+            data transfer for sensitive information. Integrated local AI models
+            for code generation, document summarization, and question answering.
+            Designed a desktop application with Electron and optimized model
+            switching for better performance on low-memory systems.
+          </p>
+          <a
+            href="https://github.com/HJ-ANAND/Local-AI-Agent"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-coral hover:underline"
+          >
+            View GitHub →
+          </a>
+        </div>
+
+        <div
+          class="bg-black p-8 rounded-lg border border-gray-800 hover:border-coral transition transform hover:-translate-y-2 duration-300"
+        >
+          <h3 class="text-2xl text-white mb-2">Lost &amp; Found Items AI</h3>
+          <p class="text-gray-400 mb-2">
+            React.js | Node.js | Express.js | MongoDB — Full-Stack Web
+            Application
+          </p>
+          <p class="text-gray-400 mb-4">
+            Built a web platform that helps users report lost items and find
+            matching belongings more easily. Implemented secure user
+            authentication and AI-assisted item matching to improve the search
+            process. Developed the frontend, backend APIs, and database
+            integration for a complete full-stack solution.
+          </p>
+          <a
+            href="https://github.com/HJ-ANAND/Lost_And_Found"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-coral hover:underline"
+          >
+            View GitHub →
+          </a>
+        </div>
+
+        <div
+          class="bg-black p-8 rounded-lg border border-gray-800 hover:border-coral transition transform hover:-translate-y-2 duration-300"
+        >
+          <h3 class="text-2xl text-white mb-4">Skill Matcher</h3>
+          <p class="text-gray-400 mb-4">
+            Built a skill matching system to compare and analyze employee skill
+            sets. Implemented compatibility evaluation logic for project
+            assignments and team management. Managed project version control and
+            documentation using GitHub.
+          </p>
+          <a
+            href="https://github.com/HJ-ANAND/Skill_Matcher"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-coral hover:underline"
+          >
+            View GitHub →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section
+      id="skills"
+      class="py-20 px-8 reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
+      <h2 class="text-3xl text-coral mb-12 text-center">Skills</h2>
+
+      <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div
+          class="bg-[#111] p-6 rounded border border-gray-800 hover:border-coral transition duration-300"
+        >
+          <h3 class="text-xl mb-4 text-white">Web Development</h3>
+          <p>HTML | CSS | React.js | Node.js | Express.js | REST APIs</p>
+        </div>
+
+        <div
+          class="bg-[#111] p-6 rounded border border-gray-800 hover:border-coral transition duration-300"
+        >
+          <h3 class="text-xl mb-4 text-white">Database & Backend</h3>
+          <p>MongoDB | Mongoose | Authentication (Clerk)</p>
+        </div>
+
+        <div
+          class="bg-[#111] p-6 rounded border border-gray-800 hover:border-coral transition duration-300"
+        >
+          <h3 class="text-xl mb-4 text-white">DevOps & Tools</h3>
+          <p>Git | GitHub | Linux (Ubuntu) | Ollama | Electron</p>
+        </div>
+
+        <div
+          class="bg-[#111] p-6 rounded border border-gray-800 hover:border-coral transition duration-300"
+        >
+          <h3 class="text-xl mb-4 text-white">Data Structures & Algorithms</h3>
+          <p>C++ | Python | LeetCode | 500+ Problems Solved</p>
+          <p class="text-gray-400 mt-2 text-sm">
+            Arrays | Linked Lists | Stacks &amp; Queues | Trees | Recursion |
+            Sliding Window | Two Pointers | Greedy Algorithms | Prefix Sum |
+            Graphs | Dynamic Programming
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section
+      id="experience"
+      class="py-20 px-8 bg-[#0d0d0d] reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
+      <h2 class="text-3xl text-coral mb-8 text-center">
+        Hackathons & Coding Events
+      </h2>
+      <div class="max-w-4xl mx-auto text-gray-400 space-y-6">
+        <div>
+          <h3 class="text-xl text-white mb-1">
+            <a
+              href="https://drive.google.com/file/d/1vr6y9cMo5lCWh40OX4tbZh6K_Ey5XSl7/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-coral transition duration-300"
+              >GeekVerse Hackathon – GGSIPU</a
+            >
+          </h3>
+          <p class="text-sm mb-1">
+            05/2025 — Conducted by Geek Room USAR &amp; IEEE WIE USAR April East
+            Delhi
+          </p>
+          <p>
+            Participated in a team-based hackathon focused on real-world problem
+            solving. Collaborated with team members to explore frontend
+            development concepts.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl text-white mb-1">
+            <a
+              href="https://drive.google.com/file/d/1LAY2WTfzf0ESOdUV6UhNh6VaT9jDLPnU/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-coral transition duration-300"
+              >HackIndia 2026 – Web3 &amp; AI Hackathon</a
+            >
+          </h3>
+          <p class="text-sm mb-1">
+            03/2026 — Hosted by Voyager Coding Club with HackIndia &amp; C#
+            Corner | 36-Hour Hackathon Greater Noida
+          </p>
+          <p>
+            Built an offline AI enterprise assistant focused on privacy and
+            secure local AI execution. Explored AI integration, offline
+            processing, and secure system architecture.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl text-white mb-1">
+            <a
+              href="https://drive.google.com/file/d/11nCRzVWmyXroPgoAmFEd9NDB7USEkPWi/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-coral transition duration-300"
+              >Code Farming – 24 Hour Code-A-Thon</a
+            >
+          </h3>
+          <p class="text-sm mb-1">
+            04/2026 — Organized by Voyager Coding Club &amp; HackerRank Greater
+            Noida
+          </p>
+          <p>
+            Participated in a 24-hour competitive coding event focused on
+            problem solving and aptitude. Strengthened logical thinking, coding
+            consistency, and performance under pressure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section
+      id="contact"
+      class="py-20 px-8 bg-[#0d0d0d] reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
+      <h2 class="text-3xl text-coral mb-8 text-center">Contact</h2>
+
+      <div class="text-center space-y-4">
+        <p>Email: anandharshjeet054@gmail.com</p>
+        <p>Phone: +91 9205921650</p>
+        <p>G Noida, Delhi NCR (201306)</p>
+
+        <div class="flex justify-center gap-6 mt-6">
+          <a
+            href="https://github.com/HJ-ANAND"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-coral transition duration-300"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/hjanand/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-coral transition duration-300"
+            >LinkedIn</a
+          >
+          <a
+            href="https://leetcode.com/HJ_ANAND/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-coral transition duration-300"
+            >LeetCode</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-6 border-t border-gray-800 text-gray-500">
+      © 2026 Harshjeet Anand
+    </footer>
+
+    <!-- Typing + Ready Effect -->
+    <script>
+      const nameText = "Harshjeet Anand";
+      const typingElement = document.getElementById("typing-name");
+      let index = 0;
+
+      function typeEffect() {
+        if (index < nameText.length) {
+          typingElement.textContent += nameText.charAt(index);
+          index++;
+          setTimeout(typeEffect, 80);
+        }
+      }
+
+      window.onload = () => {
+        typeEffect();
+
+        setTimeout(() => {
+          const readyLine = document.createElement("p");
+          readyLine.className = "text-coral mt-4";
+          readyLine.textContent = "$ ready.";
+          typingElement.parentElement.parentElement.appendChild(readyLine);
+        }, 1800);
+      };
+
+      // Scroll Reveal
+      const reveals = document.querySelectorAll(".reveal");
+
+      window.addEventListener("scroll", () => {
+        reveals.forEach((el) => {
+          const windowHeight = window.innerHeight;
+          const revealTop = el.getBoundingClientRect().top;
+          const revealPoint = 100;
+
+          if (revealTop < windowHeight - revealPoint) {
+            el.classList.add("opacity-100", "translate-y-0");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
